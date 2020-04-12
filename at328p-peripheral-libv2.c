@@ -37,7 +37,7 @@ void UART_INIT_PINS(void)
 	UART_CONFIG_TX_PIN();
 	#endif
 	
-	#if UART_TX_SETTING != 0
+	#if UART_RX_SETTING != 0
 	UART_CONFIG_RX_PIN();  
 	UART_PORT &=~ UART_RX_PIN; //disable any pull up resistors
 	#endif
